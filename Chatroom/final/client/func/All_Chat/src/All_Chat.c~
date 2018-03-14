@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+#include "Pass.h"
+
+extern int fd[2];
+int All_Chat(int client_sock)
+{
+	Node user;
+	read(fd[0],&user,sizeof(user));
+	if(user.chat_flag == 0)
+	{
+	    printf("		您已被禁言!\n");
+		return 0;
+	}
+
+	printf("需要发送的消息:");
+	scanf("%s",user.buffer);
+	user.action = -1;
+	write(client_sock,&user,sizeof(user));
+	return 0;
+
+}

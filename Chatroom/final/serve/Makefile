@@ -40,5 +40,5 @@ $(Target) : mm
 	@$(CC) -o $(Target) $(Allobjs) -lpthread -lsqlite3
 
 clean : mc
-	@rm -rf $(Targer) client
+	@rm -rf $(Targer) serve
 

@@ -68,7 +68,7 @@ Node Pass(int client_sock)
 	int select_flag = 0;	//是否有查询结果的标志位
 
 	Node pass;		//返回的信息
-		
+
 	while(1)
 	{
 		bzero(&pass,sizeof(pass));

@@ -16,7 +16,7 @@
 #include "Start.h"
 #include "Pass.h"
 
-#define SERVE_IP "192.168.1.189"	//服务器IP
+#define SERVE_IP "192.168.10.100"	//服务器IP
 #define PORT 8000		//端口号
 
 pNode head;
